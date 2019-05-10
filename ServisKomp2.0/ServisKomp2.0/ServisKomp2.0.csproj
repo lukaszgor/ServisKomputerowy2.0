@@ -58,6 +58,12 @@
     <Compile Include="panelSprzetu.Designer.cs">
       <DependentUpon>panelSprzetu.cs</DependentUpon>
     </Compile>
+    <Compile Include="panelUsterka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelUsterka.Designer.cs">
+      <DependentUpon>panelUsterka.cs</DependentUpon>
+    </Compile>
     <Compile Include="panelZgloszenia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="panelSprzetu.resx">
       <DependentUpon>panelSprzetu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelUsterka.resx">
+      <DependentUpon>panelUsterka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="panelZgloszenia.resx">
       <DependentUpon>panelZgloszenia.cs</DependentUpon>
