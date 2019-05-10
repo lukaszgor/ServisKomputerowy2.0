@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="panelPracownicy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelPracownicy.Designer.cs">
+      <DependentUpon>panelPracownicy.cs</DependentUpon>
+    </Compile>
     <Compile Include="panelSprzetu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="panelPracownicy.resx">
+      <DependentUpon>panelPracownicy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="panelSprzetu.resx">
       <DependentUpon>panelSprzetu.cs</DependentUpon>
     </EmbeddedResource>
