@@ -16,5 +16,12 @@ namespace ServisKomp2._0
         {
             InitializeComponent();
         }
+
+        private void startBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Panel_Logowania panelLog = new Panel_Logowania();
+            panelLog.Show();
+        }
     }
 }

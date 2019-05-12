@@ -16,5 +16,40 @@ namespace ServisKomp2._0
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Panel_Logowania panelLog = new Panel_Logowania();
+            panelLog.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            panelPracownicy panelPrac = new panelPracownicy();
+            panelPrac.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            panelSprzetu panelSprz = new panelSprzetu();
+            panelSprz.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            panelUsterka panelUst = new panelUsterka();
+            panelUst.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            panelZgloszenia panelZgl = new panelZgloszenia();
+            panelZgl.Show();
+        }
     }
 }
