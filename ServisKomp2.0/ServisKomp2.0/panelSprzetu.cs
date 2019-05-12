@@ -16,5 +16,12 @@ namespace ServisKomp2._0
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            panelAdrministracyjny panelAdm = new panelAdrministracyjny();
+            panelAdm.Show();
+        }
     }
 }
