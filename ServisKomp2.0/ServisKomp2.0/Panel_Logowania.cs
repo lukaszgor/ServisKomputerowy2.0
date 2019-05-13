@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +18,47 @@ namespace ServisKomp2._0
             InitializeComponent();
         }
 
+        MySqlConnection conn = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;persistsecurityinfo=True;database=sevisbeta");
+ 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            panelAdrministracyjny panelAdm = new panelAdrministracyjny();
-            panelAdm.Show();
+
+            MySqlCommand cmd = new MySqlCommand("select * from pracownicy where  login='" + this.textBox1.Text + "'and haslo='" + this.textBox2.Text + "' ; ", conn);
+            MySqlDataReader Reader;
+            try
+            {
+                conn.Open();
+                Reader = cmd.ExecuteReader();
+                int count = 0;
+                while (Reader.Read())
+                {
+                    count = count + 1;
+                }
+                if (count == 1)
+                {
+                    MessageBox.Show("login i haslo poprawne");
+                    this.Hide();
+                    panelAdrministracyjny panelAdm = new panelAdrministracyjny();
+                    panelAdm.Show();
+                }
+                else if (count > 1)
+                {
+                    MessageBox.Show("zduplikowane");
+                }
+                else
+                {
+                    MessageBox.Show("niepoprawne!");
+                }
+                conn.Close();
+            }
+            catch (Exception ee)
+            {
+                Console.Write(ee);
+            }
+
+
+
+            
         }
     }
 }
