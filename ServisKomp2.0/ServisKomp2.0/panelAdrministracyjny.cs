@@ -58,6 +58,13 @@ namespace ServisKomp2._0
             panel_odbioru_sprzetu panelodbior = new panel_odbioru_sprzetu();
             panelodbior.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            panel_klientow panelklient = new panel_klientow();
+            panelklient.Show();
+        }
     }
     
 }

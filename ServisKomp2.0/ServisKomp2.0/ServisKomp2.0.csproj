@@ -83,6 +83,12 @@
     <Compile Include="panelZgloszenia.Designer.cs">
       <DependentUpon>panelZgloszenia.cs</DependentUpon>
     </Compile>
+    <Compile Include="panel_klientow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panel_klientow.Designer.cs">
+      <DependentUpon>panel_klientow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panel_Logowania.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="panelZgloszenia.resx">
       <DependentUpon>panelZgloszenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panel_klientow.resx">
+      <DependentUpon>panel_klientow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_Logowania.resx">
       <DependentUpon>Panel_Logowania.cs</DependentUpon>
