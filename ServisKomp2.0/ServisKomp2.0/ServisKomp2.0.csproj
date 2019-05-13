@@ -89,6 +89,12 @@
     <Compile Include="Panel_Logowania.Designer.cs">
       <DependentUpon>Panel_Logowania.cs</DependentUpon>
     </Compile>
+    <Compile Include="panel_odbioru_sprzetu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panel_odbioru_sprzetu.Designer.cs">
+      <DependentUpon>panel_odbioru_sprzetu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_Logowania.resx">
       <DependentUpon>Panel_Logowania.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panel_odbioru_sprzetu.resx">
+      <DependentUpon>panel_odbioru_sprzetu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

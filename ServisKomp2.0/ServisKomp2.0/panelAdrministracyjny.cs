@@ -51,5 +51,13 @@ namespace ServisKomp2._0
             panelZgloszenia panelZgl = new panelZgloszenia();
             panelZgl.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            panel_odbioru_sprzetu panelodbior = new panel_odbioru_sprzetu();
+            panelodbior.Show();
+        }
     }
+    
 }
