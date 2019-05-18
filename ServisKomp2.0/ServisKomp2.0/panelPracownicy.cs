@@ -23,10 +23,5 @@ namespace ServisKomp2._0
             panelAdrministracyjny panelAdm = new panelAdrministracyjny();
             panelAdm.Show();
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
