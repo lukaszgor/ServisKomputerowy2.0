@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,9 @@ namespace ServisKomp2._0
         public panelAdrministracyjny()
         {
             InitializeComponent();
+          
         }
+      
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -64,6 +67,12 @@ namespace ServisKomp2._0
             this.Hide();
             panel_klientow panelklient = new panel_klientow();
             panelklient.Show();
+        }
+       public void userGuard()
+        {
+
+                    button2.Enabled = false;
+
         }
     }
     
