@@ -16,15 +16,16 @@ namespace ServisKomp2._0
         public Panel_Logowania()
         {
             InitializeComponent();
+  
         }
+        menagerSqlQuery menager = new menagerSqlQuery();
 
-        
 
         MySqlConnection conn = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;persistsecurityinfo=True;database=sevisbeta");
- 
+        
         private void button1_Click(object sender, EventArgs e)
         {
-          
+         
 
             MySqlCommand cmd = new MySqlCommand("select * from pracownicy where  login='" + this.textBox1.Text + "'and haslo='" + this.textBox2.Text + "' ; ", conn);
           
